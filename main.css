@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Open+Sans+Condensed:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Slab", serif;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+main {
+  display: grid;
+  gap: 15px;
+  margin-left: 25px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categ-option {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.categ-option p {
+  font-weight: 600;
+}
+
+.categ-option select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #e7e7e7;
+}
+
+.categ-option textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  resize: none;
+  border: 2px solid #e7e7e7;
+}
+
+.description {
+  width: 1200%;
+}
+
+.description p {
+  font-weight: 600;
+}
+
+.description textarea {
+  width: 1200px;
+  border-radius: 5px;
+  resize: none;
+  border: 2px solid #e7e7e7;
+}
+
+.image-selection {
+  max-width: 1200px;
+  padding: 10px;
+  cursor: pointer;
+  border: 2px solid #e7e7e7;
+  border-radius: 5px;
+}
+
+.image-container img {
+  margin-top: 10px;
+  width: 250px;
+  height: 300px;
+}
+
+.categ-option label {
+  font-weight: 600;
+}
+
+.btn {
+  width: 250px;
+  padding: 15px;
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 50%;
+}
+
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* MediaQueries */
+
+@media all and (max-width: 700px) {
+  main h1 {
+    text-align: center;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+  }
+
+  .select-area {
+    display: flex;
+    justify-content: center;
+  }
+
+  .categ-option {
+    display: flex;
+    justify-content: center;
+  }
+
+  .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+  }
+
+  .description textarea {
+    width: 350px;
+  }
+
+  .description p {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .image-selection {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    width: 350px;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .image-selection input {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .img-title {
+    text-align: center;
+  }
+
+  .file-upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+  }
+
+  .btn {
+    margin: 0 auto;
+  }
+}

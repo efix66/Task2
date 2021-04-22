@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Task2</title>
+  </head>
+  <body>
+    <main>
+      <h1>Adauga anunt</h1>
+      <div class="wrapper">
+        <div class="select-area">
+          <div class="categ-option">
+            <p>Marca:</p>
+            <select name="cars" id="cars">
+              <optgroup label="Marca">
+                <option value="Audi">Alege Marca</option>
+                <option value="Audi">Audi</option>
+                <option value="Wolswagen">Wolswagen</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Bmw">Bmw</option>
+                <option value="Opel">Opel</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <div class="categ-option">
+          <p>Model:</p>
+          <select name="cars" id="cars">
+            <option value="Audi">Alege model</option>
+            <option value="Rs6">Rs6</option>
+            <option value="polo">Polo</option>
+            <option value="c class">C class</option>
+            <option value="seria3">Seria 3</option>
+            <option value="astra">Astra</option>
+          </select>
+        </div>
+        <div class="categ-option">
+          <p>Pret:</p>
+          <textarea name="pret" id="pret" cols="30" rows="1"></textarea>
+        </div>
+      </div>
+      <div class="description">
+        <p>Descriere:</p>
+        <textarea name="descriere" id="" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="file-upload">
+        <h3 class="img-title">Adaugare imagini:</h3>
+        <div class="image-selection">
+          <input type="file" id="myFileInput" />
+        </div>
+        <div class="image-container">
+          <img id="imgPreview" src="" alt="Preview" />
+        </div>
+      </div>
+      <button class="btn">Salveaza si continua</button>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
